@@ -1,0 +1,63 @@
+[global]
+    # The default color scheme
+    background = "#1F1F28"
+    foreground = "#DCD7BA"
+    frame_color = "#54546D"
+    separator_color = "#2A2A37"
+
+[frame]
+    width = 2
+    radius = 5
+    color = "#54546D"
+
+[notification]
+    # General colors
+    background = "#2A2A37"
+    foreground = "#DCD7BA"
+    border_color = "#54546D"
+    timeout = 5
+
+[urgency_low]
+    background = "#2B3328" # winterGreen
+    foreground = "#DCD7BA"
+
+[urgency_normal]
+    background = "#2D4F67" # waveBlue2
+    foreground = "#DCD7BA"
+
+[urgency_critical]
+    background = "#E82424" # samuraiRed
+    foreground = "#DCD7BA"
+
+[progress_bar]
+    # Colors for progress bar in notifications
+    background = "#2A2A37"
+    foreground = "#7E9CD8" # crystalBlue
+
+[summary]
+    # Colors for summary text
+    foreground = "#DCD7BA"
+    background = "#1F1F28" # sumiInk1
+
+[icon]
+    # Colors for notification icons
+    background = "#1F1F28" # sumiInk1
+    foreground = "#DCD7BA"
+
+[border]
+    # Border colors
+    width = 1
+    color = "#54546D" # frame_color
+
+[font]
+    # Font configuration
+    # font = "monospace 10"
+
+[history]
+    # History settings
+    # max_size = 100
+
+[other]
+    # Other settings
+    # hint_color = "#FF9E3B" # roninYellow
+
