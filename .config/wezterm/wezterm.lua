@@ -29,5 +29,8 @@ config.window_padding = {
     bottom = 0,
 }
 
+-- cursor
+config.default_cursor_style = 'SteadyBar'
+
 -- and finally, return the configuration to wezterm
 return config
