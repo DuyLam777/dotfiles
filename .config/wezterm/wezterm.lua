@@ -10,13 +10,9 @@ local config = wezterm.config_builder()
 config.color_scheme = 'Kanagawa (Gogh)'
 config.font = wezterm.font 'Hack Nerd Font'
 config.font_size = 10.0
-config.window_background_opacity = 0.95
-
+config.window_background_opacity = 1
 -- Tab bar
 config.enable_tab_bar = false
-
--- IME (For Korean input)
-config.use_ime = true
 
 -- I use X11
 config.enable_wayland = false
@@ -30,7 +26,7 @@ config.window_padding = {
 }
 
 -- cursor
-config.default_cursor_style = 'SteadyBar'
+config.default_cursor_style = 'SteadyBlock'
 
 -- and finally, return the configuration to wezterm
 return config
