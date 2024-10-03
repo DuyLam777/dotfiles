@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Lower the screen brightness
+brightnessctl s 1
+
 # Define the new color palette
 BLANK='#00000000'
 DEFAULT='#1F1F28'
