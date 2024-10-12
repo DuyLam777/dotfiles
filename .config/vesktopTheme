@@ -10,8 +10,8 @@
 
 /* customize things here */
 :root {
-	--font: 'Roboto'; /* UI font name. it must be installed on your system. */
-  --font-code: Hack;
+	--font: 'Zed Plex Sans'; /* UI font name. it must be installed on your system. */
+  --font-code: Zed Plex Mono;
 	letter-spacing: -0.05ch; /* decreases letter spacing for better readability. */
 	font-weight: 400; /* UI font weight. */
 	--label-font-weight: 500; /* font weight for panel labels. */
@@ -71,4 +71,3 @@
 	--blue: #7E9CD8;
 	--green: #76946A;
 }
-
