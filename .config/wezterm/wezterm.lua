@@ -8,8 +8,8 @@ local config = wezterm.config_builder()
 
 -- For example, changing the color scheme:
 config.color_scheme = 'Kanagawa (Gogh)'
-config.font = wezterm.font 'Hack Nerd Font'
-config.font_size = 10.0
+config.font = wezterm.font('Zed Plex Mono', { weight = 400})
+config.font_size = 12.0
 config.window_background_opacity = 1
 -- Tab bar
 config.enable_tab_bar = false
