@@ -76,6 +76,7 @@ alias vim="nvim"
 alias cat="bat"
 alias neofetch="fastfetch"
 alias tree="exa --icons -T"
+alias srcpy= "source .venv/bin/activate"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -51,7 +51,7 @@
 
 [font]
     # Font configuration
-    # font = "monospace 10"
+    font = "Zed Plex Mono 10"
 
 [history]
     # History settings
