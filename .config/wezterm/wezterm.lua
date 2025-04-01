@@ -1,4 +1,5 @@
 -- Pull in the wezterm API
+--
 local wezterm = require 'wezterm'
 
 -- This will hold the configuration.
@@ -7,8 +8,8 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Kanagawa (Gogh)'
-config.font = wezterm.font('Zed Plex Mono', { weight = 400})
+config.color_scheme = 'kanagawabones'
+config.font = wezterm.font('Jetbrains Mono', { weight = 400})
 config.font_size = 12.0
 config.window_background_opacity = 1
 -- Tab bar
@@ -26,7 +27,9 @@ config.window_padding = {
 }
 
 -- cursor
-config.default_cursor_style = 'SteadyBlock'
+config.default_cursor_style = 'SteadyBar'
+
+config.audible_bell = 'Disabled'
 
 -- and finally, return the configuration to wezterm
 return config

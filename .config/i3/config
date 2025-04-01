@@ -166,20 +166,17 @@ exec --no-startup-id ~/.config/polybar/launch_polybar.sh
 # ------------------------------------------
 # CUSTOM KEYS START
 # ------------------------------------------
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # notification daemon
 exec --no-startup-id dunst
 
 # Monitors
-exec xrandr --output HDMI-A-0 --mode 1920x1080 --right-of eDP --rate 144 --dpi 144
+exec xrandr --output HDMI-1-1 --mode 1920x1080 --right-of eDP --rate 144 --dpi 144
 
 
 #Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/VVE44pv.jpg
-
-#Picom
-exec --no-startup-id picom -b
+# exec --no-startup-id feh --bg-fill ~/Pictures/a_pair_of_playing_cards_on_a_black_surface.jpg
 
 # Media keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -221,7 +218,4 @@ bindsym $mod+Ctrl+l exec .config/i3/lock.sh
 workspace_auto_back_and_forth yes
 
 # Keyboard ibus
-exec --no-startup-id ibus-daemon -drx
-
-# Assign applications to workspaces
-for_window [class="^spotify$" title="^__scratch__"] move scratchpad
+# exec --no-startup-id ibus-daemon -drx

@@ -1,6 +1,6 @@
 # My dotfiles
 
-This directory contains the dotfiles for my arch linux 
+This directory contains the dotfiles for my arch linux
 
 ## Requirements
 
@@ -24,7 +24,24 @@ Ensure you have the following installed on your system:
 - zoxide
 - fzf
 - nvim
-- oh-my-posh
+
+For zsh plugins to work, clone oh-my-zsh and optionally use the 3 plugins bellow:
+- Oh-My-Zsh:
+
+```
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+- Plugins for zsh:
+
+```
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+```
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
 ## Installation
 
