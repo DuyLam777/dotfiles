@@ -44,7 +44,7 @@ client.urgent            #C34043 #1F1F28 #DCD7BA #C34043   #54546D
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
@@ -172,11 +172,11 @@ exec --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec --no-startup-id dunst
 
 # Monitors
-exec xrandr --output HDMI-1-1 --mode 1920x1080 --right-of eDP --rate 144 --dpi 144
+exec xrandr --output HDMI-1-1 --mode 1920x1080 --right-of eDP-2 --rate 144 --dpi 144
 
 
 #Wallpaper
-# exec --no-startup-id feh --bg-fill ~/Pictures/a_pair_of_playing_cards_on_a_black_surface.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/a_pair_of_playing_cards_on_a_black_surface.jpg
 
 # Media keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status

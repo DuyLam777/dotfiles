@@ -1,7 +1,7 @@
 # Set Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 # Themes will be selected later.
-ZSH_THEME="af-magic"
+ZSH_THEME="afowler"
 # Plugins to load
 plugins=(
     git

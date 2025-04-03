@@ -51,7 +51,7 @@
 
 [font]
     # Font configuration
-    font = "Zed Plex Mono 10"
+    font = "BlexMono Nerd Font Mono"
 
 [history]
     # History settings

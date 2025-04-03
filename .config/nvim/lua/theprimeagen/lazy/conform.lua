@@ -1,29 +1,32 @@
 return {
-    'stevearc/conform.nvim',
-    opts = {},
+    "stevearc/conform.nvim",
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
-        require("conform").setup({
+        local conform = require("conform")
+
+        conform.setup({
             formatters_by_ft = {
-                lua = { "stylua" },
-                -- Conform will run multiple formatters sequentially
-                python = { "isort", "black" },
-                -- Use a sub-list to run only the first available formatter
-                javascript = { { "prettierd", "prettier" } },
+                -- Python
+                python = { "black", "isort" },
 
-                -- java = { "google-java-format", "--indent_size=4" },
+                -- Go
+                go = { "gofmt" },
 
-                sh = { "shfmt" },
+                -- Add more formatters as needed
+                -- lua = { "stylua" },
+                -- javascript = { "prettier" },
+                -- typescript = { "prettier" },
             },
-            -- format_on_save = {
-            --     timeout_ms = 10,
-            --     lsp_fallback = true,
-            -- },
+
+            format_on_save = false,
         })
-        vim.api.nvim_create_autocmd("BufWritePre", {
-            pattern = "*",
-            callback = function(args)
-                require("conform").format({ bufnr = args.buf })
-            end,
-        })
-    end
+
+        -- Set up a key mapping to manually format
+        vim.keymap.set("n", "<leader>f", function()
+            conform.format({
+                async = true,
+                lsp_fallback = true,
+            })
+        end, { desc = "Format file" })
+    end,
 }

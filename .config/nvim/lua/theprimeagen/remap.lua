@@ -58,7 +58,3 @@ end)
 -- LSP Mappings
 vim.keymap.set("n", "<leader>.", vim.lsp.buf.hover)
 vim.keymap.set("n", "<leader>,", vim.diagnostic.open_float)
-
--- Replace neovim clipboard with system clipboard
-vim.api.nvim_set_keymap('n', 'y', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'y', '"+y', { noremap = true, silent = true })
