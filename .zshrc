@@ -43,12 +43,12 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Aliases
-alias ls='exa'
-alias ll='exa -l'
+alias ls='eza'
+alias ll='eza -l'
 alias neofetch='fastfetch'
 alias vim="nvim"
 alias cat="bat"
-alias tree="exa --icons -T"
+alias tree="eza --icons -T"
 alias srcpy= "source .venv/bin/activate"
 
 # Shell integrations
