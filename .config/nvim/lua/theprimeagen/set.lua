@@ -32,10 +32,13 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
 
-vim.api.nvim_command [[au VimEnter,WinEnter,BufWinEnter * set guicursor=n-v-c:block-Cursor/lCursor]]
+vim.api.nvim_command [[au VimEnter,WinEnter,BufWinEnter * set guicursor=n-v-c:block-Cursor/lCursor,i:ver25-Cursor/lCursor]]
 
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Use system clipboard
+vim.opt.clipboard = "unnamedplus"
 
 -- DISABLES NETRW FOR NOW
 -- vim.g.loaded_netrw = 1
