@@ -49,6 +49,7 @@ alias neofetch='fastfetch'
 alias vim="nvim"
 alias cat="bat"
 alias tree="eza --icons -T"
+alias gcm="git commit -m"
 alias srcpy= "source .venv/bin/activate"
 
 # Shell integrations
