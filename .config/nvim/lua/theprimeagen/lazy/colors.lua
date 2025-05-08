@@ -32,7 +32,7 @@
 
 function ColorMyPencils(color)
     -- color = color or "rose-pine"
-    color = color or "kanagawa"
+    color = color or "github_dark_tritanopia"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -139,6 +139,10 @@ return {
 
     {
         "rebelot/kanagawa.nvim",
+    },
+
+    {
+        'projekt0n/github-nvim-theme', name = 'github-theme'
     },
 
     {

@@ -1,7 +1,8 @@
 # Set Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 # Themes will be selected later.
-ZSH_THEME="af-magic-no-dash"
+ZSH_THEME="afowler-user"
+# ZSH_THEME="af-magic-no-dash"
 # Plugins to load
 plugins=(
     git
@@ -55,3 +56,4 @@ alias srcpy= "source .venv/bin/activate"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

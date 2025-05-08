@@ -1,0 +1,17 @@
+[general]
+live_config_reload = true
+import = [
+    "~/.config/alacritty/themes/themes/github_dark_tritanopia.toml"
+]
+
+[window]
+padding = {x = 4, y = 0}
+opacity = 0.95
+blur = true
+
+[font]
+normal = {family = "MesloLGS Nerd Font", style = "Regular"}
+size = 14.0
+
+[cursor]
+style = {shape = "Beam", blinking = "Off"}
