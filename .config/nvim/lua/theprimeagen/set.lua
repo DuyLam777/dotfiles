@@ -44,3 +44,8 @@ vim.opt.clipboard = "unnamedplus"
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 
+-- Corrected guicursor settings for VimEnter and VimResume
+vim.api.nvim_command [[au VimEnter,VimResume * set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175]]
+
+-- Separate autocommand for VimLeave and VimSuspend
+vim.api.nvim_command [[au VimLeave,VimSuspend * set guicursor=a:lCursor-blinkon0]]

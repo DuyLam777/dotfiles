@@ -7,28 +7,31 @@ ZSH_THEME="afowler-user"
 plugins=(
     git
     sudo
-    archlinux
-    aws
-    kubectl
-    kubectx
     command-not-found
+    brew
+    eza
+    gitignore
+    fzf
     fzf-tab
     zsh-autosuggestions
     zsh-syntax-highlighting
+
+    pip
+    docker
+    docker-compose
 )
 
 # Zsh completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-# Source Oh My Zsh
-source $ZSH/oh-my-zsh.sh
+autoload -U compinit && compinit
+source "$ZSH/oh-my-zsh.sh"
 
 # Completion styling
 zstyle ':completion:' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:' menu no
-zstyle ':fzf-tab:complete:cd:' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $realpath'
 
 # History
 HISTSIZE=5000
@@ -51,9 +54,19 @@ alias vim="nvim"
 alias cat="bat"
 alias tree="eza --icons -T"
 alias gcm="git commit -m"
-alias srcpy= "source .venv/bin/activate"
+alias icat="kitty +kitten icat"
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# Created by `pipx` on 2025-05-12 12:39:33
+export PATH="$PATH:/Users/dln/dotfiles/.local/bin"
+
+# PATH for android-sdk
+export ANDROID_HOME="/Users/dln/Library/Android/sdk"
+export PATH="${PATH}:${ANDROID_HOME}/emulator"
+export PATH="${PATH}:${ANDROID_HOME}/tools"
+export PATH="${PATH}:${ANDROID_HOME}/tools/bin"
+export PATH="${PATH}:${ANDROID_HOME}/platform-tools"
